@@ -10,6 +10,6 @@ const state = {
     {id: 2, name: 'Create Initial State', isComplete: true},
     {id: 3, name: 'Use State to Render UI', isComplete: false},
   ]
-}
+};
 ReactDOM.render(<App todos={state.todos} />, document.getElementById('root'));
 registerServiceWorker();
