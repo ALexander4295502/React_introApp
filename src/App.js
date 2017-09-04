@@ -13,12 +13,12 @@ class App extends Component {
           <h2>Welcome to React with Redux</h2>
         </div>
         <div className="Todo-App">
-          <TodoForm />
+          <TodoForm
+            currentTodo={this.props.currentTodo}
+            changeCurrent={this.props.changeCurrent}
+          />
           <TodoList todos={this.props.todos}/>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
