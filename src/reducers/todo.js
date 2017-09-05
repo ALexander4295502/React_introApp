@@ -34,6 +34,16 @@ export const saveTodo = (name) => {
 };
 export const replaceTodo = (todo) => ({type: TODO_REPLACE, payload: todo});
 export const removeTodo = (id) => ({type: TODO_REMOVE, payload: id});
+export const getVisibleTodos = (todos, filter) => {
+  switch (filter) {
+    case 'active':
+      return todos.filter(t => !t.isComplete);
+    case 'completed':
+      return todos.filter(t => t.isComplete);
+    default:
+      return todos;
+  }
+}
 
 
 export default (state = initState, action) => {
