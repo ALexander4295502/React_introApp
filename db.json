@@ -16,11 +16,6 @@
       "isComplete": true
     },
     {
-      "id": 4,
-      "name": "Add record",
-      "isComplete": false
-    },
-    {
       "id": 5,
       "name": "Update record",
       "isComplete": false
